@@ -1,0 +1,476 @@
+/*Generales para todas las páginas*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Titulos*/
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitulo{
+    font-size: large;
+    text-align: center;
+    margin: 10px;
+}
+
+.CTA{
+    font-size: medium;
+    text-align: center;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.hero_section{
+    padding-top: 25%;
+}
+
+/*Menú*/
+
+.menu {
+    display: flex; 
+    align-items: center; 
+    justify-content:space-evenly; 
+    padding: 10px 20px;
+    background-color: white
+}
+
+    .texto_menu nav {
+        display: flex; 
+        gap: 20px; 
+    }
+
+        .menu-item {
+            margin: 0; 
+        }
+
+nav a {
+    color: gray; 
+    font-size: 16px; 
+    text-decoration: none;
+    padding: 5px 10px; 
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+#Logo {
+    height: 50px;
+    width: auto; 
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 10px 20px;
+    background-color: beige;
+}
+
+    footer a{
+        text-decoration: none;
+    }
+
+/*INDEX*/
+
+.seccion_color_1, .seccion_blanca_1, .seccion_color_2, .seccion_blanca_2 {
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+    /*Hero section*/
+    .seccion_color_1{
+        background-color: #f5f5dc;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    /*Beneficios*/
+
+    .seccion_blanca_1{
+        background-color: white; 
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 50px;
+        padding-bottom: 150px;
+    }
+
+        .beneficios_general{
+            display: flex;
+            gap: 10px; 
+            justify-content: center;
+
+        }
+
+            #beneficios{
+                width: auto; 
+                height: 50vh; 
+                background-color: beige; 
+                display: flex; 
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                text-align: center; 
+                font-size: 16px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    /*Nuestras instalaciones*/
+
+    /* Estilo del contenedor de la galería */
+    .galeria {
+        height: 50vh;
+        display: flex;
+        flex-direction: column; /* Estructura en columna (Título y galería) */
+        align-items: center;
+        justify-content: space-evenly; /* Espacio entre el título y las imágenes */
+        background-color: beige; /* Fondo claro para la sección */
+        padding: 10px;
+    }
+
+    /* Contenedor de las imágenes */
+    .imagenes {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center;
+        flex-wrap: nowrap; 
+        gap: 10px;
+        height: 100%;
+        overflow:hidden;
+    }
+
+    /* Cada imagen */
+    .imagen_img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /*Testimonios*/
+
+    .testimonios{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+        .testimonio{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            background-color: rgb(245, 245, 220, 0.5);
+            padding: 10px;
+        }
+
+            .testimonio_texto{
+                font-size: small;
+                font-style: italic;
+            }
+
+            .nombre_comentador{
+                text-align:right
+            }
+
+/*QUIENES SOMOS*/
+
+    /*cuadro_medico*/
+    .cuadro_medico{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(245, 245, 220, 0.421);
+        align-items: center;
+        
+    }
+        /*titulo*/
+        .titulo{
+            padding: 30px;
+            margin-bottom: -20px;
+        }
+        /*marco_general*/
+        .marco_general{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+                /*especialidad*/
+                .especialidad{
+                    width: 70vh;
+                    padding: 20px;
+                    margin: 50px;
+                    background-color: #f5f5dc;
+                    border-radius: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 2px 2px 5px gray;
+                }
+
+                    /*titulo_especialidad*/
+
+                    /*recuadro_imagen_especialidad*/
+                    .recuadro_imagen_especialidad{
+                        border: 2px solid rgba(128, 128, 128, 0.163);
+                        border-radius: 10px;
+                        margin:10px;
+                        background-color: white;
+                        display: flex;
+                        justify-content: center;
+                    }
+                        /*imagen_especialidad*/
+                        .imagen_especialidad{
+                            width: auto;
+                            height: 45vh;
+                            overflow:hidden;
+                            object-fit:cover;
+                            object-position:top;
+                            ;
+                        }
+                    /*descripcion_especialidad*/
+                        .descripcion_especialidad{
+                            font-style: italic;
+                        }
+
+/*NUESTRAS OFERTAS*/
+
+/*ofertas_general*/
+.ofertas_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+    /*titulo_ofertas*/
+    .titulo_ofertas{
+        padding: 20px;
+    }
+    /*subtitulo_ofertas*/
+    .subtitulo_ofertas{
+        padding: 10px;
+        font-style: italic;
+        text-align: center;
+    }
+    /*caja_ofertas*/
+    .caja_ofertas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+        /*oferta_grande*/
+        .oferta_grande{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: auto;
+            align-items: center;
+            background-color: #f5f5dc;
+            box-shadow: 2px 2px 5px gray;
+            margin: 20px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+            /*titulo_oferta_grande*/
+
+            /*marco_imagen_oferta_grande*/
+            .imagen_oferta{
+                box-shadow: 2px 2px 5px gray;
+            }
+            /*descripcion_oferta_grande*/
+            .descripcion_oferta_grande{
+                padding: 10px;
+                font-style: italic;
+            }
+
+        /*ofertas_pequeñas*/
+        .ofertas_pequeñas{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            height: 100%;
+        }            
+        
+            /*ofertas_pequeñas_fila*/
+            .ofertas_pequeñas_fila{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+                
+                /*cajas_ofertas_pequeñas_fila*/
+                .cajas_ofertas_pequeñas_fila{
+                    display: flex;
+                    height: 60vh;
+                    flex-direction: column;
+                    background-color: #f5f5dc;
+                    box-shadow: 2px 2px 5px gray;
+                    margin: 20px;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content:space-between;
+                }
+                    /*titulo_oferta_pequeña*/
+
+                    /*marco_imagen_oferta_pequeña*/
+                    .marco_imagen_oferta_pequeña{
+                        
+                    }
+                        /*imagen_oferta_pequeña*/
+                        .imagen_oferta_pequeña{
+                            box-shadow: 2px 2px 5px gray;
+                            height: 100%;
+                            width: auto;
+                            align-items: center;
+                            justify-content: center;
+                            max-width: 100%; 
+                            max-height: 100%; 
+                            object-fit: cover;
+                        }
+                    /*descripcion_oferta_pequeña*/
+                    .descripcion_oferta_pequeña{
+                        padding: 10px;
+                        font-style: italic;
+                        font-size: 10px;
+                    }
+
+/*CONTACTO*/
+
+/*Marco General*/
+.Marco_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: hsla(60, 56%, 91%, 0.25);
+    
+}
+
+    /*marco_contenido*/
+    .marco_contenido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+    }
+
+    /*titulo_contacto*/
+    .titulo_contacto{
+        padding: 10px;
+    }
+
+    /*formulario*/
+    .formulario{
+        width:50vh;
+        margin-right: 200px;
+        padding: 20px;
+        background-color: #f5f5dc;
+        box-shadow: 2px 2px 5px gray;
+    }
+
+        /*lineas_formulario*/
+        .lineas_formulario{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            justify-content: space-evenly;
+        }
+
+            /*label*/
+            .label{
+                width: 100%;
+                padding-bottom: 2px;
+            }
+            /*cuadro_texto*/
+            .cuadro_texto{
+                width: 100%;
+            }
+
+    /*donde_encontrarnos*/
+    .donde_encontrarnos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 50vh;
+    }
+        /*titulo_donde_encontrarnos*/
+
+        /*recuadro_contactos*/
+        .recuadro_contactos{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+        }
+            /*marco_mapa*/
+
+                /*mapa*/
+                .mapa{
+                    box-shadow: 2px 2px 5px gray;
+                }
+            /*datos_contacto*/
+            .datos_contacto{
+                padding: 20px;
+            }
+                /*datos_contacto_telefono*/
+                .datos_contacto_telefono{
+                    height: 100%;
+                }
+                    /*telefono*/
+                    
+                        /*num_telefono*/
+
+                /*datos_contacto_correo*/
+                .datos_contacto_correo{
+                    height: 100%;
+                    padding-top: 20px;
+                }
+                    /*correo*/
+
+                        /*dir_correo*/
+
+                /*datos_contacto_direccion*/
+                .datos_contacto_direccion{
+                    height: 100%;
+                    padding-top: 20px;
+                }
+                    /*direccion*/
+
+                        /*dir_calle*/
+
+
+
+
+    
