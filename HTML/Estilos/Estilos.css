@@ -56,98 +56,38 @@ footer{
 
 /*INDEX*/
 
-.seccion_color_1, .seccion_blanca_1, .seccion_color_2, .seccion_blanca_2 {
-    margin-bottom: 20px; /* Espacio entre secciones */
-}
-
     /*Hero section*/
     .seccion_color_1{
         background-color: #f5f5dc;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
     }
 
     /*Beneficios*/
 
-    .seccion_blanca_1{
-        background-color: white; 
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        gap: 50px;
-        padding-bottom: 150px;
-    }
-
         .beneficios_general{
-            display: flex;
             gap: 10px; 
-            justify-content: center;
-
         }
 
             #beneficios{
-                width: auto; 
-                height: 50vh; 
                 background-color: beige; 
-                display: flex; 
-                flex-direction: column;
-                align-items: center; 
                 justify-content: center;
                 text-align: center; 
-                font-size: 16px;
                 border-radius: 5px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding-top: 10px;
         }
 
     /*Nuestras instalaciones*/
 
     /* Estilo del contenedor de la galería */
     .galeria {
-        height: 50vh;
         display: flex;
         flex-direction: column; /* Estructura en columna (Título y galería) */
         align-items: center;
         justify-content: space-evenly; /* Espacio entre el título y las imágenes */
         background-color: beige; /* Fondo claro para la sección */
-        padding: 10px;
     }
-
-    /* Contenedor de las imágenes */
-    .imagenes {
-        display: flex;
-        flex-direction: row;
-        align-items: center; 
-        justify-content: center;
-        flex-wrap: nowrap; 
-        gap: 10px;
-        height: 100%;
-        overflow:hidden;
-    }
-
-    /* Cada imagen */
-    .imagen_img {
-        height: 100%;
-        width: 100%;
-        border-radius: 10px; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
 
     /*Testimonios*/
-
-    .testimonios{
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        gap: 10px;
-    }
 
         .testimonio{
             display: flex;
@@ -155,6 +95,7 @@ footer{
             gap:10px;
             background-color: rgb(245, 245, 220, 0.5);
             padding: 10px;
+            margin: 10px;
         }
 
             .testimonio_texto{
