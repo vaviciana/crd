@@ -38,38 +38,6 @@ h2{
 
 /*Menú*/
 
-.menu {
-    display: flex; 
-    align-items: center; 
-    justify-content:space-evenly; 
-    padding: 10px 20px;
-    background-color: white
-}
-
-    .texto_menu nav {
-        display: flex; 
-        gap: 20px; 
-    }
-
-        .menu-item {
-            margin: 0; 
-        }
-
-nav a {
-    color: gray; 
-    font-size: 16px; 
-    text-decoration: none;
-    padding: 5px 10px; 
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
-#Logo {
-    height: 50px;
-    width: auto; 
-}
 
 /*Footer*/
 
