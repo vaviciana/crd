@@ -249,23 +249,10 @@ footer{
 
 /*Marco General*/
 .Marco_general{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     background-color: hsla(60, 56%, 91%, 0.25);
     
 }
-
-    /*marco_contenido*/
-    .marco_contenido{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:center;
-        width: 100%;
-    }
 
     /*titulo_contacto*/
     .titulo_contacto{
@@ -274,16 +261,12 @@ footer{
 
     /*formulario*/
     .formulario{
-        width:50vh;
-        margin-right: 200px;
-        padding: 20px;
         background-color: #f5f5dc;
         box-shadow: 2px 2px 5px gray;
     }
 
         /*lineas_formulario*/
         .lineas_formulario{
-            width: 100%;
             display: flex;
             flex-direction: column;
             padding: 5px;
@@ -305,8 +288,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        width: 50vh;
     }
         /*titulo_donde_encontrarnos*/
 
@@ -322,35 +303,8 @@ footer{
                 .mapa{
                     box-shadow: 2px 2px 5px gray;
                 }
-            /*datos_contacto*/
-            .datos_contacto{
-                padding: 20px;
-            }
-                /*datos_contacto_telefono*/
-                .datos_contacto_telefono{
-                    height: 100%;
-                }
-                    /*telefono*/
-                    
-                        /*num_telefono*/
 
-                /*datos_contacto_correo*/
-                .datos_contacto_correo{
-                    height: 100%;
-                    padding-top: 20px;
-                }
-                    /*correo*/
 
-                        /*dir_correo*/
-
-                /*datos_contacto_direccion*/
-                .datos_contacto_direccion{
-                    height: 100%;
-                    padding-top: 20px;
-                }
-                    /*direccion*/
-
-                        /*dir_calle*/
 
 /*GALERIA*/
 /*grilla de galeria*/
