@@ -8,7 +8,7 @@
     overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
-/*Titulos*/
+/*TITULOS*/
 
 h1{
     text-align: center;
@@ -26,21 +26,7 @@ h2{
     margin: 10px;
 }
 
-.CTA{
-    font-size: medium;
-    text-align: center;
-    font-weight: lighter;
-    margin: 10px;
-}
-
-.hero_section{
-    padding-top: 25%;
-}
-
-/*Menú*/
-
-
-/*Footer*/
+/*FOOTER*/
 
 footer{
     display: flex;
@@ -53,6 +39,8 @@ footer{
     footer a{
         text-decoration: none;
     }
+
+/*PAGINAS INDIVIDUALES*/
 
 /*INDEX*/
 
@@ -76,16 +64,14 @@ footer{
                 padding-top: 10px;
         }
 
-    /*Nuestras instalaciones*/
-
-    /* Estilo del contenedor de la galería */
-    .galeria {
-        display: flex;
-        flex-direction: column; /* Estructura en columna (Título y galería) */
-        align-items: center;
-        justify-content: space-evenly; /* Espacio entre el título y las imágenes */
-        background-color: beige; /* Fondo claro para la sección */
-    }
+/* Estilo del contenedor de la galería */
+.galeria {
+    display: flex;
+    flex-direction: column; /* Estructura en columna (Título y galería) */
+    align-items: center;
+    justify-content: space-evenly; /* Espacio entre el título y las imágenes */
+    background-color: beige; /* Fondo claro para la sección */
+}
 
     /*Testimonios*/
 
@@ -109,19 +95,12 @@ footer{
 
 /*QUIENES SOMOS*/
 
-    /*cuadro_medico*/
-    .cuadro_medico{
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(245, 245, 220, 0.421);
-        align-items: center;
-        
+    /*titulo*/
+    .titulo{
+        padding: 30px;
+        margin-bottom: -20px;
     }
-        /*titulo*/
-        .titulo{
-            padding: 30px;
-            margin-bottom: -20px;
-        }
+
         /*marco_general*/
         .marco_general{
             display: flex;
@@ -139,8 +118,6 @@ footer{
                     justify-content: center;
                     box-shadow: 2px 2px 5px gray;
                 }
-
-                    /*titulo_especialidad*/
 
                     /*recuadro_imagen_especialidad*/
                     .recuadro_imagen_especialidad{
@@ -185,14 +162,7 @@ footer{
         font-style: italic;
         text-align: center;
     }
-    /*caja_ofertas*/
-    .caja_ofertas{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+
         /*oferta_grande*/
         .oferta_grande{
             display: flex;
@@ -203,8 +173,6 @@ footer{
             justify-content: center;
             align-items: center;
         }
-            /*titulo_oferta_grande*/
-
             /*marco_imagen_oferta_grande*/
             .imagen_oferta{
                 box-shadow: 2px 2px 5px gray;
@@ -251,7 +219,6 @@ footer{
 .Marco_general{
     width: 100%;
     background-color: hsla(60, 56%, 91%, 0.25);
-    
 }
 
     /*titulo_contacto*/
@@ -289,8 +256,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-        /*titulo_donde_encontrarnos*/
-
         /*recuadro_contactos*/
         .recuadro_contactos{
             display: flex;
@@ -328,6 +293,8 @@ footer{
     "cont5 cont5 cont7 cont7 cont7 cont7 cont7 cont7 cont8 cont8 cont8 cont8";
 
 }
+
+/*Contenedores de la grilla*/
 
     .contenedor-1 { grid-area: cont1; }
     .contenedor-2 { grid-area: cont2; }
