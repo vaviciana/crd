@@ -27,18 +27,9 @@ h2{
 }
 
 /*FOOTER*/
-
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-    padding: 10px 20px;
-    background-color: beige;
+    background-color: #f5f5dc;
 }
-
-    footer a{
-        text-decoration: none;
-    }
 
 /*PAGINAS INDIVIDUALES*/
 
