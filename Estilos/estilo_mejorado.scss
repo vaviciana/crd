@@ -163,7 +163,6 @@ h2{
 .galeria-grilla{
     height: 100vh; /* Toda la pantalla */
     width: 100vw;
-    max-width: 100vw;
     overflow-x: hidden;
     margin: 10px; 
     display: grid;
@@ -201,14 +200,32 @@ h2{
     .contenedor-8 { 
         grid-area: cont8; 
     }
-    .galeria-grilla > div {
+    > div {
         width: 100%;
         height: 100%;
     }
-    .galeria-grilla img {
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover; 
+    }
+}
+
+@media (max-width: 576px) {    
+    .galeria-grilla{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        > div {
+            flex: 1;
+            height: 100vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
     }
 }
 
