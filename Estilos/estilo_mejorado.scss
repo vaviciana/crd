@@ -59,10 +59,11 @@ h2{
 .testimonio{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap:10px;
     background-color: rgb(245, 245, 220, 0.5);
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 5px;
     .testimonio_texto{
         font-size: small;
         font-style: italic;
@@ -70,6 +71,12 @@ h2{
     .nombre_comentador{
         text-align:right
     }
+}
+
+@media(min-width:768px) {
+    .testimonio {
+        width: 30%;
+}
 }
 
 /*QUIENES SOMOS*/
@@ -83,34 +90,37 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    .especialidad{
-        padding: 20px;
-        margin: 50px;
-        background-color: #f5f5dc;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 2px 2px 5px gray;
-        .recuadro_imagen_especialidad{
-            border: 2px solid rgba(128, 128, 128, 0.163);
-            border-radius: 10px;
-            margin:10px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            .imagen_especialidad{
-                width: auto;
-                height: 45vh;
-                overflow:hidden;
-                object-fit:cover;
-                object-position:top;
-            }
-            .descripcion_especialidad{
-                font-style: italic;
-            }
-        }
+}
+
+.especialidad{
+    padding: 20px;
+    margin: 50px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.recuadro_imagen_especialidad{
+    border: 2px solid rgba(128, 128, 128, 0.163);
+    border-radius: 10px;
+    margin:10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .imagen_especialidad{
+        width: auto;
+        height: 45vh;
+        overflow:hidden;
+        object-fit:cover;
+        object-position:top;
+    }
+    .descripcion_especialidad{
+        font-style: italic;
     }
 }
+
 
 /*NUESTRAS OFERTAS*/
 
@@ -157,6 +167,16 @@ h2{
             justify-content:space-between;
         }
     }
+
+@media (min-width: 576px){
+    .oferta_grande{
+        width: 75%;
+    }
+    .contenedor_ofertas_pequeñas{
+        width: 75%;
+    }
+}
+
 
 /*GALERIA*/
 /*grilla de galeria*/

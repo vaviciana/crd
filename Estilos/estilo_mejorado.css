@@ -55,10 +55,11 @@ h2 {
 .testimonio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   background-color: rgba(245, 245, 220, 0.5);
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 5px;
 }
 .testimonio .testimonio_texto {
   font-size: small;
@@ -68,6 +69,11 @@ h2 {
   text-align: right;
 }
 
+@media (min-width: 768px) {
+  .testimonio {
+    width: 30%;
+  }
+}
 /*QUIENES SOMOS*/
 .titulo {
   padding: 30px;
@@ -80,7 +86,8 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.marco_general .especialidad {
+
+.especialidad {
   padding: 20px;
   margin: 50px;
   background-color: #f5f5dc;
@@ -89,7 +96,8 @@ h2 {
   justify-content: center;
   box-shadow: 2px 2px 5px gray;
 }
-.marco_general .especialidad .recuadro_imagen_especialidad {
+
+.recuadro_imagen_especialidad {
   border: 2px solid rgba(128, 128, 128, 0.163);
   border-radius: 10px;
   margin: 10px;
@@ -97,14 +105,14 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.marco_general .especialidad .recuadro_imagen_especialidad .imagen_especialidad {
+.recuadro_imagen_especialidad .imagen_especialidad {
   width: auto;
   height: 45vh;
   overflow: hidden;
   object-fit: cover;
   object-position: top;
 }
-.marco_general .especialidad .recuadro_imagen_especialidad .descripcion_especialidad {
+.recuadro_imagen_especialidad .descripcion_especialidad {
   font-style: italic;
 }
 
@@ -152,6 +160,14 @@ h2 {
   justify-content: space-between;
 }
 
+@media (min-width: 576px) {
+  .oferta_grande {
+    width: 75%;
+  }
+  .contenedor_ofertas_pequeñas {
+    width: 75%;
+  }
+}
 /*GALERIA*/
 /*grilla de galeria*/
 .galeria-grilla {
