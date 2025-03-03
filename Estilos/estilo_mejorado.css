@@ -24,16 +24,22 @@ h2 {
 .seccion_color_1 {
   background-color: #f5f5dc;
 }
-.seccion_color_1 .beneficios_general {
+
+.beneficios_general {
+  display: flex;
   gap: 10px;
 }
-.seccion_color_1 .beneficios_general #beneficios {
+.beneficios_general .beneficios {
   background-color: beige;
   justify-content: center;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.beneficios_general .beneficios:hover {
+  transform: translateY(-5px);
 }
 
 /* Estilo del contenedor de la galería */
@@ -104,10 +110,6 @@ h2 {
 
 /*NUESTRAS OFERTAS*/
 .ofertas_general {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 50px;
 }
 .ofertas_general .titulo_ofertas {
@@ -134,20 +136,14 @@ h2 {
   padding: 10px;
   font-style: italic;
 }
-.ofertas_general .oferta_grande .ofertas_pequeñas {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: 100%;
-}
-.ofertas_general .oferta_grande .ofertas_pequeñas .ofertas_pequeñas_fila {
+.ofertas_general .ofertas_pequeñas_fila {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.ofertas_general .oferta_grande .ofertas_pequeñas .cajas_ofertas_pequeñas_fila {
+.ofertas_general .cajas_ofertas_pequeñas_fila {
   display: flex;
   flex-direction: column;
   background-color: #f5f5dc;
@@ -221,41 +217,41 @@ h2 {
   }
 }
 /*CONTACTO*/
-.Marco_general {
+.Marco_general, .ofertas_general {
   width: 100%;
   background-color: hsla(60, 56%, 91%, 0.25);
 }
-.Marco_general .titulo_contacto {
+.Marco_general .titulo_contacto, .ofertas_general .titulo_contacto {
   padding: 10px;
 }
-.Marco_general .formulario {
+.Marco_general .formulario, .ofertas_general .formulario {
   background-color: #f5f5dc;
   box-shadow: 2px 2px 5px gray;
 }
-.Marco_general .formulario .lineas_formulario {
+.Marco_general .formulario .lineas_formulario, .ofertas_general .formulario .lineas_formulario {
   display: flex;
   flex-direction: column;
   padding: 5px;
   justify-content: space-evenly;
 }
-.Marco_general .formulario .lineas_formulario .label {
+.Marco_general .formulario .lineas_formulario .label, .ofertas_general .formulario .lineas_formulario .label {
   width: 100%;
   padding-bottom: 2px;
 }
-.Marco_general .formulario .lineas_formulario .cuadro_texto {
+.Marco_general .formulario .lineas_formulario .cuadro_texto, .ofertas_general .formulario .lineas_formulario .cuadro_texto {
   width: 100%;
 }
-.Marco_general .donde_encontrarnos {
+.Marco_general .donde_encontrarnos, .ofertas_general .donde_encontrarnos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Marco_general .donde_encontrarnos .recuadro_contactos {
+.Marco_general .donde_encontrarnos .recuadro_contactos, .ofertas_general .donde_encontrarnos .recuadro_contactos {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.Marco_general .donde_encontrarnos .recuadro_contactos .mapa {
+.Marco_general .donde_encontrarnos .recuadro_contactos .mapa, .ofertas_general .donde_encontrarnos .recuadro_contactos .mapa {
   box-shadow: 2px 2px 5px gray;
 }
 
