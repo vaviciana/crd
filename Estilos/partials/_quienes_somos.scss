@@ -1,0 +1,41 @@
+/*QUIENES SOMOS*/
+.titulo{
+    padding: 30px;
+    margin-bottom: -20px;
+}
+
+.marco_general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidad{
+    padding: 20px;
+    margin: 50px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.recuadro_imagen_especialidad{
+    border: 2px solid rgba(128, 128, 128, 0.163);
+    border-radius: 10px;
+    margin:10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .imagen_especialidad{
+        width: auto;
+        height: 45vh;
+        overflow:hidden;
+        object-fit:cover;
+        object-position:top;
+    }
+    .descripcion_especialidad{
+        font-style: italic;
+    }
+}

@@ -1,0 +1,53 @@
+/*NUESTRAS OFERTAS*/
+.ofertas_general{
+    @extend .Marco_general;
+    padding: 50px;
+    .titulo_ofertas{
+        padding: 20px;
+    }
+    .subtitulo_ofertas{
+        padding: 10px;
+        font-style: italic;
+        text-align: center;
+    }
+    .oferta_grande{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5dc;
+        box-shadow: 2px 2px 5px gray;
+        justify-content: center;
+        align-items: center;
+        .imagen_oferta{
+            box-shadow: 2px 2px 5px gray;
+        }
+        .descripcion_oferta_grande{
+            padding: 10px;
+            font-style: italic;
+        }
+    }
+        .ofertas_pequeñas_fila{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cajas_ofertas_pequeñas_fila{
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f5dc;
+            box-shadow: 2px 2px 5px gray;
+            align-items: center;
+            justify-content:space-between;
+        }
+    }
+
+@media (min-width: 576px){
+    .oferta_grande{
+        width: 75%;
+    }
+    .contenedor_ofertas_pequeñas{
+        width: 75%;
+    }
+}

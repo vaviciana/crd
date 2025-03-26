@@ -1,0 +1,70 @@
+/*GALERIA*/
+/*grilla de galeria*/
+.galeria-grilla{
+    height: 100vh; /* Toda la pantalla */
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 10px; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap:10px;    
+    grid-template-areas:
+    "cont1 cont1 cont1 cont1 cont2 cont2 cont3 cont3 cont4 cont4 cont4 cont4"
+    "cont1 cont1 cont1 cont1 cont2 cont2 cont3 cont3 cont4 cont4 cont4 cont4"
+    "cont5 cont5 cont6 cont6 cont6 cont6 cont3 cont3 cont8 cont8 cont8 cont8"
+    "cont5 cont5 cont6 cont6 cont6 cont6 cont3 cont3 cont8 cont8 cont8 cont8"
+    "cont5 cont5 cont7 cont7 cont7 cont7 cont7 cont7 cont8 cont8 cont8 cont8"
+    "cont5 cont5 cont7 cont7 cont7 cont7 cont7 cont7 cont8 cont8 cont8 cont8";
+    .contenedor-1 { 
+        grid-area: cont1;
+    }
+    .contenedor-2 { 
+        grid-area: cont2; 
+    }
+    .contenedor-3 { 
+        grid-area: cont3; 
+    }
+    .contenedor-4 { 
+        grid-area: cont4; 
+    }
+    .contenedor-5 { 
+        grid-area: cont5; 
+    }
+    .contenedor-6 { 
+        grid-area: cont6; 
+    }
+    .contenedor-7 { 
+        grid-area: cont7; 
+    }
+    .contenedor-8 { 
+        grid-area: cont8; 
+    }
+    > div {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+@media (max-width: 576px) {    
+    .galeria-grilla{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        > div {
+            flex: 1;
+            height: 100vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    }
+}
