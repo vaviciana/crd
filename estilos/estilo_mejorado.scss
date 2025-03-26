@@ -1,0 +1,85 @@
+/*SITIO WEB - GENERALES*/
+*{
+    padding: 0px;
+    margin: 0px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+/*PÁGINAS*/
+
+/*INDEX*/
+/*Estilo de la sección de beneficios*/
+.seccion_color_1{
+    background-color: #f5f5dc;
+}
+
+.beneficios_general {
+    display: flex;
+    gap: 10px; 
+
+    .beneficios{
+        background-color: beige; 
+        justify-content: center;
+        text-align: center; 
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-top: 10px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+/* Estilo del contenedor de la galería */
+.galeria {
+    display: flex;
+    flex-direction: column; /* Estructura en columna (Título y galería) */
+    align-items: center;
+    justify-content: space-evenly; /* Espacio entre el título y las imágenes */
+    background-color: beige; /* Fondo claro para la sección */
+}
+
+/*Testimonios*/
+
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    background-color: rgb(245, 245, 220, 0.5);
+    padding: 15px;
+    margin: 5px;
+    .testimonio_texto{
+        font-size: small;
+        font-style: italic;
+    }
+    .nombre_comentador{
+        text-align:right
+    }
+}
+
+@media(min-width:768px) {
+    .testimonio {
+        width: 30%;
+}
+}
+
+@import 'quienes_somos';
+@import 'ofertas';
+@import 'galeria';
+@import 'contacto';
